@@ -1,0 +1,25 @@
+.mesh {
+  background-color: rgba(168, 216, 255, 1);
+  background-image: radial-gradient(
+      at 83% 46%,
+      rgba(255, 168, 173, 1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(at 58% 57%, rgba(87, 87, 255, 1) 0%, transparent 50%),
+    radial-gradient(at 52% 3%, rgba(117, 130, 240, 1) 0%, transparent 50%),
+    radial-gradient(at 32% 46%, rgba(229, 255, 238, 1) 0%, transparent 50%),
+    radial-gradient(at 26% 98%, rgba(255, 132, 107, 1) 0%, transparent 50%),
+    radial-gradient(at 17% 42%, rgba(194, 238, 255, 1) 0%, transparent 50%),
+    radial-gradient(at 27% 81%, rgba(223, 91, 230, 1) 0%, transparent 50%);
+  background-size: cover;
+  height: 100vh;
+}
+.font{
+    font-family: 'Tilt Neon', sans-serif;
+}
+.font_analyzer{
+    font-size: 1.5rem;
+}
+.overly-back{
+    background-color: rgba(255, 255, 255, 0.3);
+}

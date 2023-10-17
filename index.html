@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="container d-flex justify-content-center flex-column text-center font mesh"
+  >
+    <h2 class="fw-bold">text analyzer</h2>
+    <form action="" class="" data-textanalyzer="form">
+      <textarea
+        data-textanalyzer="input"
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        class="form-control"
+        placeholder="insert your text"
+      >
+      </textarea>
+      <div class="row col-2 w-100 py-3">
+        <div class="col">
+          <button
+            class="btn overly-back btn-outline-primary w-100"
+            data-textanalyzer="submit"
+            type="submit"
+          >
+            submit
+          </button>
+        </div>
+        <div class="col">
+          <button
+            class="btn overly-back btn-outline-danger w-100"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            type="button"
+          >
+            reset
+          </button>
+        </div>
+      </div>
+    </form>
+    <div class="analyzer row">
+      <h2>analyzer</h2>
+      <div class="col">
+        <span class="font_analyzer"
+          >characters: <span data-textanalyzer="characters">0</span></span
+        ><br />
+        <span class="font_analyzer"
+          >paragraphs: <span data-textanalyzer="paragraphs">0</span></span
+        >
+      </div>
+      <div class="col">
+        <span class="font_analyzer"
+          >symbol: <span data-textanalyzer="symbol">0</span></span
+        ><br />
+        <span class="font_analyzer"
+          >words: <span data-textanalyzer="words">0</span></span
+        >
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      data-textanalyzer="modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              delete text?
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">Do you want to delete the text?</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              No
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+              data-textanalyzer="reset"
+            >
+              Yes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
